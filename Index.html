@@ -1,238 +1,226 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | กิตติพิชญ์ คำแก่นแก้ว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | กิตติพิชญ์</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Prompt', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 
-    body{
-      background:#f5f7fb;
-      color:#333;
-      line-height:1.6;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+}
 
-    header{
-      background:linear-gradient(135deg,#1e3c72,#2a5298);
-      color:white;
-      padding:60px 20px;
-      text-align:center;
-    }
+body{
+background:linear-gradient(135deg,#4facfe,#00c6ff);
+min-height:100vh;
+padding:30px;
+}
 
-    .profile-img{
-      width:180px;
-      height:220px;
-      object-fit:cover;
-      border-radius:20px;
-      border:5px solid white;
-      box-shadow:0 5px 20px rgba(0,0,0,0.3);
-      margin-bottom:20px;
-    }
+.container{
+max-width:1000px;
+margin:auto;
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
 
-    header h1{
-      font-size:2.5rem;
-      margin-bottom:10px;
-    }
+.cover{
+height:200px;
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+}
 
-    header p{
-      font-size:1.1rem;
-      opacity:0.9;
-    }
+.profile{
+text-align:center;
+margin-top:-90px;
+padding:0 20px;
+}
 
-    .container{
-      max-width:1100px;
-      margin:auto;
-      padding:40px 20px;
-    }
+.profile img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
 
-    .section{
-      background:white;
-      margin-bottom:30px;
-      padding:30px;
-      border-radius:20px;
-      box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    }
+.profile h1{
+margin-top:15px;
+font-size:32px;
+color:#0f172a;
+}
 
-    .section h2{
-      color:#1e3c72;
-      margin-bottom:20px;
-      border-left:6px solid #2a5298;
-      padding-left:15px;
-    }
+.profile p{
+color:#64748b;
+}
 
-    .info-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:20px;
-    }
+.content{
+padding:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
 
-    .info-box{
-      background:#f4f6fa;
-      padding:15px;
-      border-radius:12px;
-    }
+.card{
+background:#f8fafc;
+padding:25px;
+border-radius:18px;
+transition:0.3s;
+}
 
-    .portfolio-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-    }
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
 
-    .portfolio-card{
-      background:#f4f6fa;
-      border-radius:15px;
-      overflow:hidden;
-      transition:0.3s;
-    }
+h2{
+color:#2563eb;
+margin-bottom:15px;
+}
 
-    .portfolio-card:hover{
-      transform:translateY(-5px);
-    }
+.bar{
+height:15px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:15px;
+}
 
-    .portfolio-card img{
-      width:100%;
-      height:180px;
-      object-fit:cover;
-    }
+.fill{
+height:100%;
+background:linear-gradient(to right,#2563eb,#06b6d4);
+}
 
-    .portfolio-content{
-      padding:15px;
-    }
+.contact a{
+display:block;
+text-decoration:none;
+color:#334155;
+margin:10px 0;
+}
 
-    footer{
-      text-align:center;
-      padding:25px;
-      background:#1e3c72;
-      color:white;
-      margin-top:40px;
-    }
+.footer{
+text-align:center;
+padding:20px;
+background:#eff6ff;
+}
 
-    @media(max-width:768px){
-
-      .info-grid{
-        grid-template-columns:1fr;
-      }
-
-      header h1{
-        font-size:2rem;
-      }
-
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
+<div class="container">
 
-    <!-- ใส่รูปของคุณ -->
-    <img 
-      src="IMG_2E8DBD1DFA08-1.jpeg"
-      alt="Profile"
-      class="profile-img"
-    >
+<div class="cover"></div>
 
-    <h1>ชัยณรงค์ ทองอร่าม</h1>
-    <p>Student Portfolio Website</p>
+<div class="profile">
 
-  </header>
+<img src="profile.jpg">
 
-  <div class="container">
+<h1>กิตติพิชญ์ คำแก่นแก้ว</h1>
 
-    <!-- About -->
-    <section class="section">
-      <h2>ข้อมูลส่วนตัว</h2>
+<p>รหัสนักศึกษา : 6652301027</p>
 
-      <div class="info-grid">
+<p>คณะศิลปศาสตร์ | สาขาภาษาจีนธุรกิจ</p>
 
-        <div class="info-box">
-          <strong>ชื่อ - นามสกุล</strong><br>
-          ชัยณรงค์ ทองอร่าม
-        </div>
+</div>
 
-        <div class="info-box">
-          <strong>รหัสนักศึกษา</strong><br>
-          6657100051
-        </div>
+<div class="content">
 
-        <div class="info-box">
-          <strong>สถานะ</strong><br>
-          นักศึกษา
-        </div>
+<div class="card">
+<h2>✨ เกี่ยวกับฉัน</h2>
 
-        <div class="info-box">
-          <strong>ความสนใจ</strong><br>
-          AI, ภาษาจีน, เทคโนโลยี, Web Design
-        </div>
+<p>
+นักศึกษาที่สนใจด้านภาษาจีน การสื่อสาร และการบริการ
+มีความรับผิดชอบ เรียนรู้เร็ว และพร้อมพัฒนาตนเองอยู่เสมอ
+</p>
 
-      </div>
-    </section>
+</div>
 
-    <!-- Language Skills -->
-    <section class="section">
-      <h2>ทักษะทางภาษา</h2>
+<div class="card">
 
-      <div class="info-grid">
+<h2>🎉 แนะนำโปรโมชั่น</h2>
 
-        <div class="info-box">
-          <strong>🇨🇳 ภาษาจีน</strong><br>
-          HSK 4 (200+ คะแนน)
-        </div>
+<p>
+โปรโมชั่นพิเศษสำหรับผู้ติดตามใหม่ รับส่วนลด 20%
+พร้อมรับคำแนะนำด้านภาษาจีนเบื้องต้นฟรี
+</p>
 
-        <div class="info-box">
-          <strong>🇬🇧 ภาษาอังกฤษ</strong><br>
-          CEFR B2
-        </div>
+</div>
 
-      </div>
-    </section>
+<div class="card">
 
-    <!-- Portfolio -->
-    <section class="section">
-      <h2>ผลงาน / Portfolio</h2>
+<h2>🌏 ระดับภาษา</h2>
 
-      <div class="portfolio-grid">
+<p>ภาษาจีน : HSK 4</p>
 
-        <div class="portfolio-card">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="">
-          <div class="portfolio-content">
-            <h3>เว็บไซต์ Portfolio</h3>
-            <p>ออกแบบและพัฒนาเว็บไซต์ Portfolio ด้วย HTML และ CSS</p>
-          </div>
-        </div>
+<div class="bar">
+<div class="fill" style="width:80%"></div>
+</div>
 
-        <div class="portfolio-card">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="">
-          <div class="portfolio-content">
-            <h3>การสอนภาษาจีน</h3>
-            <p>จัดทำแผนการสอนภาษาจีนแบบ Active Learning</p>
-          </div>
-        </div>
+<p>ภาษาอังกฤษ : Upper Intermediate (B2)</p>
 
-        <div class="portfolio-card">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="">
-          <div class="portfolio-content">
-            <h3>AI & Technology</h3>
-            <p>ศึกษาการใช้ AI เพื่อการศึกษาและการออกแบบสื่อ</p>
-          </div>
-        </div>
+<div class="bar">
+<div class="fill" style="width:75%"></div>
+</div>
 
-      </div>
-    </section>
+</div>
 
-  </div>
 
-  <footer>
-    © 2026 Portfolio Website | Chainarong Thongaram
-  </footer>
+<div class="card">
+
+<h2>⭐ ความสามารถพิเศษ</h2>
+
+<p>• Microsoft Office</p>
+<p>• Canva Design</p>
+<p>• แปลไทย-จีน-อังกฤษ</p>
+<p>• ทักษะการสื่อสารและการบริการ</p>
+
+</div>
+
+
+<div class="card contact">
+
+<h2>📞 ช่องทางติดต่อ</h2>
+
+<a href="#">📱 โทร : 094-726-3814</a>
+
+<a href="#">📧 Email : kittipitch.student@mail.com</a>
+
+<a href="#">📘 Facebook : Kittipitch K.</a>
+
+<a href="#">📷 Instagram : kittipitch.kk</a>
+
+<a href="#">💬 Line : kitti_cn</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>📚 การศึกษา</h2>
+
+<p>
+มหาวิทยาลัยตัวอย่างแห่งประเทศไทย<br>
+คณะศิลปศาสตร์<br>
+สาขาภาษาจีนธุรกิจ
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Kittipitch Portfolio
+</div>
+
+</div>
 
 </body>
 </html>
